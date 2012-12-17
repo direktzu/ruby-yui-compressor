@@ -4,7 +4,7 @@ require "stringio"
 
 module YUI #:nodoc:
   class Compressor
-    VERSION = "0.9.6"
+    VERSION = "0.9.7"
 
     class Error < StandardError; end
     class OptionError   < Error; end
@@ -107,7 +107,7 @@ module YUI #:nodoc:
       end
 
       def path_to_jar_file
-        options.delete(:jar_file) || File.join(File.dirname(__FILE__), *%w".. yuicompressor-2.4.4.jar")
+        options.delete(:jar_file) || File.join(File.dirname(__FILE__), *%w".. yuicompressor-2.4.7.jar")
       end
 
       def streamify(stream_or_string)
